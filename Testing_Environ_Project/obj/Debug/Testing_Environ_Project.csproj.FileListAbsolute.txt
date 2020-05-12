@@ -8,3 +8,15 @@ C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Pro
 C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.csproj.CoreCompileInputs.cache
 C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.exe
 C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.pdb
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\bin\Debug\Testing_Environ_Project.exe.config
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\bin\Debug\Testing_Environ_Project.exe
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\bin\Debug\Testing_Environ_Project.pdb
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.csprojAssemblyReference.cache
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.GNSS_DataConversion.resources
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.Main.resources
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.Properties.Resources.resources
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.csproj.GenerateResource.cache
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.csproj.CoreCompileInputs.cache
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.exe
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.pdb
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.Distance_Between_2positions.resources

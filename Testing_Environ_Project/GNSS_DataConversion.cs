@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Testing_Environ_Project
 {
-    public partial class Form1 : Form
+    public partial class GNSS_DataConversion : Form
     {
-        public Form1()
+        public GNSS_DataConversion()
         {
             InitializeComponent();
         }
@@ -195,6 +195,11 @@ namespace Testing_Environ_Project
 			altitude_Output.Text = "_";
 			longitude_Output.Text = "_";
 			latitude_Output.Text = "_";
+		}
+
+		private void GNSS_DataConversion_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FormProvider.getMain().Show();
 		}
 	}
 }
