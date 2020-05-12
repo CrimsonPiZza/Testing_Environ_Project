@@ -1,0 +1,10 @@
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\bin\Debug\Testing_Environ_Project.exe.config
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\bin\Debug\Testing_Environ_Project.exe
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\bin\Debug\Testing_Environ_Project.pdb
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.csprojAssemblyReference.cache
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.Form1.resources
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.Properties.Resources.resources
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.csproj.GenerateResource.cache
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.csproj.CoreCompileInputs.cache
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.exe
+C:\Users\Kyle Hemsworth\source\repos\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.pdb
