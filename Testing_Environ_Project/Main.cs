@@ -28,5 +28,11 @@ namespace Testing_Environ_Project
             this.Hide();
             FormProvider.getDistance_Between_2Positions().Show();
         }
+
+        private void IMU_Display_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProvider.getIMU_Display_Monitor().Show();
+        }
     }
 }

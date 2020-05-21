@@ -152,9 +152,7 @@ namespace Testing_Environ_Project
 							String pitch = $"{num60:f4}";
 							String roll = $"{num61:f4}";
 
-							yaw_Output.Text = yaw + " Rad";
-							pitch_Output.Text = pitch + " Rad";
-							roll_Output.Text = roll + " Rad";
+							// Missing Output
 
 							break;
 						}

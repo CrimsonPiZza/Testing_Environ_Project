@@ -31,6 +31,7 @@
             this.GNSS_DataConversion_Btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Two_Positions_Distance_Btn = new System.Windows.Forms.Button();
+            this.IMU_Display = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GNSS_DataConversion_Btn
@@ -65,11 +66,23 @@
             this.Two_Positions_Distance_Btn.UseVisualStyleBackColor = true;
             this.Two_Positions_Distance_Btn.Click += new System.EventHandler(this.Two_Positions_Distance_Btn_Click);
             // 
+            // IMU_Display
+            // 
+            this.IMU_Display.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.IMU_Display.Location = new System.Drawing.Point(12, 201);
+            this.IMU_Display.Name = "IMU_Display";
+            this.IMU_Display.Size = new System.Drawing.Size(268, 62);
+            this.IMU_Display.TabIndex = 3;
+            this.IMU_Display.Text = "IMU Display Monitor";
+            this.IMU_Display.UseVisualStyleBackColor = true;
+            this.IMU_Display.Click += new System.EventHandler(this.IMU_Display_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 344);
+            this.Controls.Add(this.IMU_Display);
             this.Controls.Add(this.Two_Positions_Distance_Btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GNSS_DataConversion_Btn);
@@ -86,5 +99,6 @@
         private System.Windows.Forms.Button GNSS_DataConversion_Btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Two_Positions_Distance_Btn;
+        private System.Windows.Forms.Button IMU_Display;
     }
 }

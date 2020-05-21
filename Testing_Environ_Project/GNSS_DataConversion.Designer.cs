@@ -43,15 +43,7 @@
             this.latitude_Output = new System.Windows.Forms.Label();
             this.clear_Btn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.yaw_Output = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.roll_Output = new System.Windows.Forms.Label();
-            this.pitch_Output = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +71,7 @@
             this.input_Box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.input_Box.Location = new System.Drawing.Point(11, 24);
-            this.input_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.input_Box.Margin = new System.Windows.Forms.Padding(2);
             this.input_Box.Multiline = true;
             this.input_Box.Name = "input_Box";
             this.input_Box.Size = new System.Drawing.Size(438, 112);
@@ -102,7 +94,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.start_Btn.Location = new System.Drawing.Point(308, 278);
-            this.start_Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.start_Btn.Margin = new System.Windows.Forms.Padding(2);
             this.start_Btn.Name = "start_Btn";
             this.start_Btn.Size = new System.Drawing.Size(140, 37);
             this.start_Btn.TabIndex = 4;
@@ -195,7 +187,7 @@
             this.clear_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.clear_Btn.Location = new System.Drawing.Point(236, 278);
-            this.clear_Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clear_Btn.Margin = new System.Windows.Forms.Padding(2);
             this.clear_Btn.Name = "clear_Btn";
             this.clear_Btn.Size = new System.Drawing.Size(68, 37);
             this.clear_Btn.TabIndex = 13;
@@ -212,99 +204,19 @@
             this.groupBox1.Controls.Add(this.longitude_Output);
             this.groupBox1.Controls.Add(this.altitude_Output);
             this.groupBox1.Location = new System.Drawing.Point(11, 169);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(196, 104);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(435, 104);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "GNSS";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.yaw_Output);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.roll_Output);
-            this.groupBox2.Controls.Add(this.pitch_Output);
-            this.groupBox2.Location = new System.Drawing.Point(236, 169);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(210, 104);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "IMU";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 68);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Roll   : ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 22);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Yaw  : ";
-            // 
-            // yaw_Output
-            // 
-            this.yaw_Output.AutoSize = true;
-            this.yaw_Output.Location = new System.Drawing.Point(46, 22);
-            this.yaw_Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.yaw_Output.Name = "yaw_Output";
-            this.yaw_Output.Size = new System.Drawing.Size(13, 13);
-            this.yaw_Output.TabIndex = 12;
-            this.yaw_Output.Text = "_";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(4, 47);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Pitch : ";
-            // 
-            // roll_Output
-            // 
-            this.roll_Output.AutoSize = true;
-            this.roll_Output.Location = new System.Drawing.Point(48, 68);
-            this.roll_Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.roll_Output.Name = "roll_Output";
-            this.roll_Output.Size = new System.Drawing.Size(13, 13);
-            this.roll_Output.TabIndex = 16;
-            this.roll_Output.Text = "_";
-            // 
-            // pitch_Output
-            // 
-            this.pitch_Output.AutoSize = true;
-            this.pitch_Output.Location = new System.Drawing.Point(46, 47);
-            this.pitch_Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.pitch_Output.Name = "pitch_Output";
-            this.pitch_Output.Size = new System.Drawing.Size(13, 13);
-            this.pitch_Output.TabIndex = 14;
-            this.pitch_Output.Text = "_";
             // 
             // GNSS_DataConversion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 324);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.time_Output);
@@ -314,14 +226,12 @@
             this.Controls.Add(this.input_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GNSS_DataConversion";
             this.Text = "Sample Data Conversion";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GNSS_DataConversion_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,13 +254,6 @@
         private System.Windows.Forms.Label latitude_Output;
         private System.Windows.Forms.Button clear_Btn;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label yaw_Output;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label roll_Output;
-        private System.Windows.Forms.Label pitch_Output;
     }
 }
 

@@ -20,3 +20,4 @@ D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\o
 D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.exe
 D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.pdb
 D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.Distance_Between_2positions.resources
+D:\Internship\Machine Guidance\Testing_Environ_Project\Testing_Environ_Project\obj\Debug\Testing_Environ_Project.IMU_Display_Monitor.resources

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -69,7 +70,70 @@ namespace Testing_Environ_Project
 
             dist = dist * 1.609344;
 
-            return dist;
+            return dist * 1000;
+            #endregion
+
+            #region Algorith_3
+            // Algorithm 3 : Using Pythagon Theorem
+            /*            double delta_Lat = 0;
+                        double delta_Long = 0;
+                        double lat_Distance = 0;
+                        double long_Distance = 0;
+                        double hypothenus_Distance = 0;
+
+                        if (lat2 > lat1)
+                        {   
+                            if ( lat1 < 0 && lat2 > 0 )
+                            {
+                                delta_Lat = lat1 + lat2;
+                            }
+                            else
+                            {
+                                delta_Lat = lat2 - lat1;
+                            }
+                        }
+                        else if (lat1 > lat2)
+                        {
+                            if (lat2 < 0 && lat1 > 0)
+                            {
+                                delta_Lat = lat1 + lat2;
+                            }
+                            else
+                            {
+                                delta_Lat = lat1 - lat2;
+                            }
+                        }
+
+                        if (long2 > long1)
+                        {
+                            if (long1 < 0 && long2 > 0)
+                            {
+                                delta_Long = long1 + long2;
+                            }
+                            else
+                            {
+                                delta_Long = long2 - long1;
+                            }
+                        }
+                        else if (long1 > long2)
+                        {
+                            if (long2 < 0 && long1 > 0)
+                            {
+                                delta_Long = long1 + long2;
+                            }
+                            else
+                            {
+                                delta_Long = long1 - long2;
+                            }
+                        }
+
+                        lat_Distance = delta_Lat * 111139;
+                        long_Distance = delta_Long * 111139;
+
+                        // Pythagor : c^2 = a^2 + b^2
+                        hypothenus_Distance = Math.Sqrt(Math.Pow(lat_Distance, 2) + Math.Pow(long_Distance, 2));
+
+                        return hypothenus_Distance;*/
             #endregion
         }
 

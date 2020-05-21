@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -55,6 +55,9 @@
     <Compile Include="Distance_Between_2positions.Designer.cs">
       <DependentUpon>Distance_Between_2positions.cs</DependentUpon>
     </Compile>
+    <Compile Include="EZenGnssProperty.cs" />
+    <Compile Include="EZenImuProperty.cs" />
+    <Compile Include="EZenSensorProperty.cs" />
     <Compile Include="FormProvider.cs" />
     <Compile Include="GNSS_DataConversion.cs">
       <SubType>Form</SubType>
@@ -62,19 +65,62 @@
     <Compile Include="GNSS_DataConversion.Designer.cs">
       <DependentUpon>GNSS_DataConversion.cs</DependentUpon>
     </Compile>
+    <Compile Include="IMU_Display_Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMU_Display_Monitor.Designer.cs">
+      <DependentUpon>IMU_Display_Monitor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpenZen.cs" />
+    <Compile Include="OpenZenFloatArray.cs" />
+    <Compile Include="OpenZenPINVOKE.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SWIGTYPE_p_bool.cs" />
+    <Compile Include="SWIGTYPE_p_float.cs" />
+    <Compile Include="SWIGTYPE_p_int.cs" />
+    <Compile Include="SWIGTYPE_p_p_ZenComponentHandle.cs" />
+    <Compile Include="SWIGTYPE_p_size_t.cs" />
+    <Compile Include="SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="SWIGTYPE_p_unsigned_long.cs" />
+    <Compile Include="SWIGTYPE_p_unsigned_long_long.cs" />
+    <Compile Include="SWIGTYPE_p_void.cs" />
+    <Compile Include="ZenAsyncStatus.cs" />
+    <Compile Include="ZenClientHandle_t.cs" />
+    <Compile Include="ZenComponentHandle_t.cs" />
+    <Compile Include="ZenError.cs" />
+    <Compile Include="ZenEvent.cs" />
+    <Compile Include="ZenEventData.cs" />
+    <Compile Include="ZenEventData_SensorDisconnected.cs" />
+    <Compile Include="ZenEventData_SensorListingProgress.cs" />
+    <Compile Include="ZenGnssData.cs" />
+    <Compile Include="ZenGnssEvent.cs" />
+    <Compile Include="ZenGnssFixCarrierPhaseSolution.cs" />
+    <Compile Include="ZenGnssFixType.cs" />
+    <Compile Include="ZenHeaveMotionData.cs" />
+    <Compile Include="ZenImuData.cs" />
+    <Compile Include="ZenImuEvent.cs" />
+    <Compile Include="ZenLogLevel.cs" />
+    <Compile Include="ZenOrientationOffsetMode.cs" />
+    <Compile Include="ZenPropertyType.cs" />
+    <Compile Include="ZenSensorDesc.cs" />
+    <Compile Include="ZenSensorEvent.cs" />
+    <Compile Include="ZenSensorHandle_t.cs" />
+    <Compile Include="ZenSensorInitError.cs" />
     <EmbeddedResource Include="Distance_Between_2positions.resx">
       <DependentUpon>Distance_Between_2positions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GNSS_DataConversion.resx">
       <DependentUpon>GNSS_DataConversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMU_Display_Monitor.resx">
+      <DependentUpon>IMU_Display_Monitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

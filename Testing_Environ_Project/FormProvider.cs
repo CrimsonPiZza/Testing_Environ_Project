@@ -11,6 +11,7 @@ namespace Testing_Environ_Project
         private static Main mainForm;
         private static GNSS_DataConversion gnss_DataConversion;
         private static Distance_Between_2positions distance_Between_2Positions;
+        private static IMU_Display_Monitor imu_Display_Monitor;
         
         public static Main getMain()
         {
@@ -40,6 +41,16 @@ namespace Testing_Environ_Project
                 return distance_Between_2Positions;
             }
             return distance_Between_2Positions;
+        }
+
+        public static IMU_Display_Monitor getIMU_Display_Monitor()
+        {
+            if (imu_Display_Monitor == null || imu_Display_Monitor.IsDisposed)
+            {
+                imu_Display_Monitor = new IMU_Display_Monitor();
+                return imu_Display_Monitor;
+            }
+            return imu_Display_Monitor;
         }
     }
 }
