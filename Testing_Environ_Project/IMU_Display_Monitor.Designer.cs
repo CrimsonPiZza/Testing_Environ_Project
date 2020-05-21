@@ -288,7 +288,7 @@
             // 
             // roll
             // 
-            this.roll.Location = new System.Drawing.Point(57, 68);
+            this.roll.Location = new System.Drawing.Point(57, 22);
             this.roll.Name = "roll";
             this.roll.ReadOnly = true;
             this.roll.Size = new System.Drawing.Size(176, 20);
@@ -304,7 +304,7 @@
             // 
             // pitch
             // 
-            this.pitch.Location = new System.Drawing.Point(57, 22);
+            this.pitch.Location = new System.Drawing.Point(57, 67);
             this.pitch.Name = "pitch";
             this.pitch.ReadOnly = true;
             this.pitch.Size = new System.Drawing.Size(176, 20);
@@ -313,7 +313,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 71);
+            this.label10.Location = new System.Drawing.Point(12, 25);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(38, 13);
             this.label10.TabIndex = 2;
@@ -331,7 +331,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 25);
+            this.label12.Location = new System.Drawing.Point(11, 70);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(39, 13);
             this.label12.TabIndex = 0;
@@ -342,7 +342,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(286, 131);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 167);
+            this.pictureBox1.Size = new System.Drawing.Size(239, 167);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -359,6 +359,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "IMU_Display_Monitor";
             this.Text = "IMU_Display_Monitor";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.IMU_Display_Monitor_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

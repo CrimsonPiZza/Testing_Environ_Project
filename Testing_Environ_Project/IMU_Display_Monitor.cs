@@ -14,7 +14,7 @@ namespace Testing_Environ_Project
     public partial class IMU_Display_Monitor : Form
     {
 
-        private delegate void safeCallDelegate(String text); // For safe cross thread
+        public static Thread thr;
         public float acx;
         public float acy;
         public float acz;
@@ -75,9 +75,9 @@ namespace Testing_Environ_Project
                                         // read acceleration
                                         OpenZenFloatArray fa = OpenZenFloatArray.frompointer(zenEvent.data.imuData.a);
                                         // read euler angles
-                                        OpenZenFloatArray fr = OpenZenFloatArray.frompointer(zenEvent.data.imuData.r);
+                                        OpenZenFloatArray fg = OpenZenFloatArray.frompointer(zenEvent.data.imuData.g);
                                         // read quaternion
-                                        OpenZenFloatArray fq = OpenZenFloatArray.frompointer(zenEvent.data.imuData.q);
+                                        OpenZenFloatArray fb = OpenZenFloatArray.frompointer(zenEvent.data.imuData.b);
 
                                         // Output Data
                                         IMU_Display_Monitor imu = FormProvider.getIMU_Display_Monitor();
@@ -88,14 +88,14 @@ namespace Testing_Environ_Project
                                         imu.acz= fa.getitem(2);
 
                                         // Gyroscope
-                                        imu.gyx = fr.getitem(0);
-                                        imu.gyy = fr.getitem(1);
-                                        imu.gyz = fr.getitem(2);
+                                        imu.gyx = fg.getitem(0);
+                                        imu.gyy = fg.getitem(1);
+                                        imu.gyz = fg.getitem(2);
 
                                         // Magnetometer
-                                        imu.mgx = fq.getitem(0);
-                                        imu.mgy = fq.getitem(1);
-                                        imu.mgz = fq.getitem(2);
+                                        imu.mgx = fb.getitem(0);
+                                        imu.mgy = fb.getitem(1);
+                                        imu.mgz = fb.getitem(2);
 
                                         break;
                                 }
@@ -131,7 +131,7 @@ namespace Testing_Environ_Project
 
             // Creating thread 
             // Using thread class 
-            Thread thr = new Thread(new ThreadStart(obj.sensorEventThread));
+            thr = new Thread(new ThreadStart(obj.sensorEventThread));
             thr.Start();
 
             // start sensor listing, new sensors will be reported as Events in our event thread
@@ -183,31 +183,52 @@ namespace Testing_Environ_Project
             // Pitch
             getPitch();
 
-            // Yaw
-            getYaw();
-
             // Roll
             getRoll();
+
+            // Yaw
+            getYaw();
         }
 
         public void getPitch()
         {
-            _pitch = 180 * Math.Atan2(acx, Math.Sqrt(Math.Pow(acy, 2) + Math.Pow(acz, 2))) / Math.PI;
+            // 1st Formula
+            //_pitch = 180 * Math.Atan2(acx, Math.Sqrt(Math.Pow(acy, 2) + Math.Pow(acz, 2))) / Math.PI;
+
+            // 2nd Formula
+            _pitch = Math.Atan2(-acx, Math.Sqrt(acy * acy + acz * acz)) * 180 / Math.PI;
+            
             this.pitch.Text = _pitch.ToString();
         }
 
         public void getRoll()
         {
-            _roll = 180 * Math.Atan2(acy, Math.Sqrt(Math.Pow(acx, 2) + Math.Pow(acz, 2))) / Math.PI;
+            // 1st Formula
+            //_roll = 180 * Math.Atan2(acy, Math.Sqrt(Math.Pow(acx, 2) + Math.Pow(acz, 2))) / Math.PI;
+
+            // 2nd Formula
+            _roll = Math.Atan2(acy, acz) * 180 / Math.PI;
+
             this.roll.Text = _roll.ToString();
         }
 
         public void getYaw()
         {
-            double mag_x = mgx * Math.Cos(_pitch) + mgy * Math.Sin(_roll) * Math.Sin(_pitch) + mgz * Math.Cos(_roll) * Math.Sin(_pitch);
-            double mag_y = mgy * Math.Cos(_roll) - mgz * Math.Sin(_roll);
-            _yaw = 180 * Math.Atan2(-mag_y, mag_x) / Math.PI;
-            yaw.Text = _yaw.ToString();
+            // 1st Fromula
+            //double mag_x = mgx * Math.Cos(_pitch) + mgy * Math.Sin(_roll) * Math.Sin(_pitch) + mgz * Math.Cos(_roll) * Math.Sin(_pitch);
+            //double mag_y = mgy * Math.Cos(_roll) - mgz * Math.Sin(_roll);
+            //_yaw = 180 * Math.Atan2(-mag_y, mag_x) / Math.PI;
+
+            // 2nd Formula
+            _yaw = 180 * Math.Atan2(mgy, mgx) / Math.PI;
+
+            this.yaw.Text = _yaw.ToString();
+        }
+
+        private void IMU_Display_Monitor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            thr.Abort();
+            FormProvider.getMain().Show();
         }
     }
 }
