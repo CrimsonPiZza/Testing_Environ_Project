@@ -145,7 +145,7 @@ namespace Testing_Environ_Project
 
             ZenSensorInitError sensorInitError = ZenSensorInitError.ZenSensorInitError_Max;
             // try three connection attempts
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 10; i++)
             {
                 ZenSensorHandle_t sensorHandle = new ZenSensorHandle_t();
                 sensorInitError = OpenZen.ZenObtainSensor(zenHandle, obj.mFoundSensors[0], sensorHandle);
